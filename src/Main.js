@@ -9,7 +9,7 @@ function Main({activeNote, onUpdateNote}){
         })
     };
 
-    if(!activeNote) return <div className="no-active-note">No note selected</div>;
+    if(!activeNote) return <div className="no-active-note">No note selected || Write notes in markdown</div>;
     return <div className="app-main">
         <div className="app-main-note-edit">
             <input 
