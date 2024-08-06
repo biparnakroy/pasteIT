@@ -19,7 +19,7 @@ function App() {
     const newNote ={
       id: uuid(),
 
-      title: "Untitled Note",
+      title: "Untitled..",
 
       body: "",
 
