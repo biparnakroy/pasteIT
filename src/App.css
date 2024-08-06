@@ -111,9 +111,11 @@ button:hover {
   width: 70%;
   height: 100vh;
 }
-.app-main-note-edit,
+.app-main-note-edit{
+  height: 45;
+}
 .app-main-note-preview {
-  height: 50vh;
+  height: 55vh;
 }
 
 .no-active-note {
@@ -136,7 +138,7 @@ textarea {
   border: 1px solid #231f1f;
   margin-bottom: 20px;
   width: 100%;
-  height: calc(50vh - 130px);
+  height: calc(45vh - 130px);
   padding: 10px;
   resize: none;
   font-size: inherit;
@@ -158,7 +160,7 @@ textarea {
   overflow-y: scroll;
   background: rgba(0, 0, 0, 0.02);
   color: #999;
-  min-height: 50vh; /* Initial minimum height */
+  min-height: 55vh; /* Initial minimum height */
   max-height: 90vh; 
 }
 
@@ -196,4 +198,58 @@ textarea {
   height: 10px;
   cursor: ns-resize;
   background: transparent;
+}
+
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+  .App {
+    flex-direction: column; /* Stack sidebar and main content vertically */
+  }
+
+  .app-sidebar {
+    width: 100%;
+    height: 25%; /* Sidebar height adjustment */
+    border-right: none;
+    border-bottom: 1px solid #3b3939d2;
+    max-width: 100%;
+  }
+
+  .app-sidebar-notes {
+    height: calc(25vh - 78px);
+  }
+
+  .app-main {
+    width: 100%;
+    height: 75%; /* Main content area adjustment */
+  }
+
+  .app-main-note-edit,
+  .app-main-note-preview {
+    height: auto;
+  }
+
+  .no-active-note {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #999;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-sidebar-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .app-main-note-edit input {
+    font-size: 1.5rem;
+  }
+
+  .no-active-note {
+    font-size: 1.2rem;
+  }
 }
