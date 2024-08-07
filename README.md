@@ -18,6 +18,10 @@ Store your ideas/desings/illustrations and more with the power of markdown.
 ### Tech Stack : 
 - React
 
+### Demo 
+
+https://youtu.be/0UAlKqLdqwU
+
 ### Live Project:
 
 https://biparnakroy.work.gd/pasteIT/
