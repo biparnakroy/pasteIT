@@ -15,6 +15,9 @@ Store your ideas/desings/illustrations and more with the power of markdown.
  - Responsive UI
  - UX Catered to ease of development
 
+### Tech Stack : 
+- React
+
 ### Live Project:
 
 https://biparnakroy.work.gd/pasteIT/
